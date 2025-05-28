@@ -1,0 +1,86 @@
+@import url(src/styles/nav.css);
+@import url(src/styles/landing.css);
+@import url(src/styles/dashboard.css);
+@import url(src/styles/store.css);
+@import url(src/styles/forms.css);
+@import url(src/styles/cheats.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --background: #09090c;
+    /*Barra de navegação (navgation bar colors and sizes)*/
+   
+    --glassNavigation: #0d0c1156;
+    --glassNavigation2:rgba(30, 29, 48, 0.466);
+    --textDefault: #d5d4db;
+    --textSelected: #f5f3ff;
+    --selectedButton: #12121dbb;
+    --stroke: #30304b56;
+
+    /*text style */
+    --snow-light: #e9e9fafa;
+    --blue-snow: #f1f1fdfa;
+    --aesthetic-white: #f8f7ff;
+    --transluced-glass: #232638f6;
+    --shadow-grayer: #8e8ca1;
+    --glow-shadow: #e9e7ff;
+    
+    --font-xxxl: 12rem;
+    --font-xxl: 3rem;
+    --font-xl: 1.7rem;
+    --font-lg: 1.5rem;
+    --font-md: 1rem;
+    --font-sm: .8rem;
+}
+
+.bg-01 {
+    background-image: url(src/assets/backgrounds/9b0f940b0e30e1049d5733d341da2337.gif);
+    background-size: cover;
+}
+.bg-02 {
+    background-image: url(src/assets/backgrounds/6f7c63991726d61d63730682e791d78c-401798651.gif);
+    background-size: cover;
+}
+body {
+    background-color: var(--background);
+    font-family: "Geist", sans-serif;
+}
+footer {
+    background-color: var(--glassNavigation);
+    border: 1px solid var(--stroke);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    text-align: center;
+
+    h1 {
+        font-weight: bolder;
+        font-size: var(--font-xl);
+        color: var(--snow-light);
+      }
+      span {
+        color: var(--shadow-grayer);
+      }
+    h2 {
+        font-size: var(--font-xl);
+        color: var(--aesthetic-white);
+    }
+    p {
+        font-size: var(--font-md);
+        color: var(--glow-shadow);
+    }
+    a {
+        transition: .2s;
+    }
+    a:hover {
+        color: var(--glow-shadow);
+    }
+}
+.separator {
+    width: 100%;
+    background-color: var(--stroke);
+    height: 1px;
+}
