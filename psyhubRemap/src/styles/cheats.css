@@ -1,0 +1,81 @@
+.cheat {
+    display: flex;
+    padding: .4rem;
+    width: 500px;
+    height: 200px;
+    background-color: var(--glassNavigation);
+    border: 1px solid var(--stroke);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: .5rem;
+    transition: .5s;
+    h1 {
+        font-size: var(  --font-xl);
+        color: var( --snow-light);
+    }
+    h2 {
+        font-size: var(--font-lg);
+        color: var( --snow-light);
+    }
+    p {
+        height: 90px;
+        font-size: var(--font-md);
+        color: var( --snow-light);   
+    }
+    img {
+        object-fit: contain;
+        max-width:150px;
+        max-height: 200px;
+        border-radius: .5rem;
+    }
+    .download-btn {
+        background: var(--glassNavigation2);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        padding: .5rem 5rem;
+        border-radius: .5rem;
+        transition: ease .3s;
+        color: var(--snow-light);
+        img {
+            object-fit: cover;
+            width: 1.2rem;
+        }
+    }
+    .download-btn:hover {
+        color: var(--shadow-grayer);
+        background-color: var(--snow-light);
+        img {
+            filter: invert(100%);
+        }
+    }
+    .tutorial {
+        display: flex;
+        background: var(--glassNavigation2);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        transition: ease .3s;
+        color: var(--snow-light);
+        img {
+            object-fit: cover;
+            width: 1.2rem;
+            filter: invert(100%);
+        }
+    }
+    .tutorial:hover {
+        color: var(--shadow-grayer);
+        background-color: var(--snow-light);
+        img {
+            filter: invert(0%);
+        }
+    }
+}
+.cheat:hover {
+    border: 1px solid var(--shadow-grayer);
+    transform: scale(1.05);
+}
+#cheat-download {
+    height: fit-content;
+}
