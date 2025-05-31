@@ -1,0 +1,96 @@
+@import url(src/styles/navgation.css);
+@import url(src/styles/landing.css);
+@import url(src/styles/animations.css);
+@import url(src/styles/cheats.css);
+@import url(src/styles/mobile.css);
+:root {
+    /*Barra de navegação (navgation bar colors and sizes)*/
+    --glassNavigation: #11111338;
+    --selectedButton: #f3f3ff;
+    --stroke: #2328304b;
+    --textDefault: #d5d4db;
+    --textSelected: #f5f3ff;
+
+    /*text style */ 
+    --snow-light: #eff3ff;
+    --aesthetic-white: #be97fd;
+    --aesthetic-wolf: #b0aeb8;
+    --transluced-glass: #232638f6;
+    --shadow-grayer: #8e8ca1;
+    --darkness-abysal: #000000;
+    --mono-purple : #5800bd;
+    --hilight-purple: #6f24b4;
+         /*texto responsivo ao tema na barra de navv */
+
+        --darkness-text: #080808;
+        --code-grayer: #8e8ca1;
+        --code-white : #f2f4ff;
+
+
+     /*Backgrounds */
+    --darkness-snow : #14141da9;
+    --darkness-snow-stroke: #1f1f2ea9;
+    --footer: #15151b91;
+
+    --font-xxxl: 12rem;
+    --font-xxlg: 7rem;
+    --font-xxl: 3.6rem;
+    --font-lgm: 4rem;
+    --font-xlg: 3rem;
+    --font-xl: 2rem;
+    --font-lg: 1.5rem;
+    --font-md: 1rem;
+    --font-sm: .8rem;
+}
+
+.bg-01 {
+    background-image: url(src/assets/backgrounds/main-bg.png);
+}
+.bg-02 {
+    background-image: url(src/assets/backgrounds/secondary.png);
+}
+footer {
+    background-color: var(--darkness-snow);
+    h1 {
+        font-size: var(--font-xl);
+        font-weight: bolder;
+        color: var(--snow-light);
+
+    }
+    img {
+        width: 10%;
+        border-radius: .5rem;
+        margin: .2rem;
+    }
+    a {
+        color: var(--shadow-grayer);  
+    }
+    p {
+        font-size: var(--font-lg);
+        color: var(--code-white);
+    }
+    a:hover {
+        color: var(--mono-purple);
+    }
+    .menu a:after  {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: var(--mono-purple);
+        transition: .2s;
+    }
+    .menu a:hover:after  {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--mono-purple);
+    }
+    .separator {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        height: 2px;
+        background-color: var(--mono-purple);
+        width: 90%;
+    }
+}

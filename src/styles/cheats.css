@@ -1,0 +1,52 @@
+.cheat-card {
+        background-color: var( --glass-navigation);
+        border: 1px solid var(--stroke);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 1rem;
+        border-radius: .5rem;
+        width: 580px;
+        height: 200px;
+        display: flex;
+        transition: .2s;
+        div {
+            margin-left: .6rem;
+        }
+        .banner {
+            border-radius: .5rem;
+                 width: 150px;
+                height: 150px;
+                object-fit: contain;
+        }
+        h1 {
+            color: var(--aesthetic-white);
+            font-weight: 900;
+            font-size: var(--font-xl);
+        }
+        p {
+            color: var(--shadow-grayer);
+        }
+        a {
+            padding: .6rem 1rem;
+            border-radius: .5rem;
+            background-color: var(--glass-navigation);
+            color: var(--aesthetic-white);
+            transition: .2s;
+            img {
+                width: 1.5rem;
+                transition: .2s;
+            }
+        }
+        a:hover {
+            background-color: var(--snow-light);
+            color: var(--stroke);
+            img {
+                filter: invert(100);
+            }
+        }
+}
+.cheat-card:hover {
+    border: 1px solid var(--shadow-grayer);
+    transform: scale(1.05);
+}

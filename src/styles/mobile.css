@@ -1,0 +1,86 @@
+@media (max-width:1400px) {
+    #introduction {
+        h1 {
+            font-size: var(--font-xxlg);
+            color: var(--aesthetic-white);
+        }
+        p {
+            font-size: var(--font-md);
+        }
+        .text-secondary {
+               font-size: var(--font-xxlg);
+            line-height: .8;
+            margin-top: -11rem;
+        }
+    }
+
+}
+#categories {
+    padding: 0;
+    h1 {
+        font-size: var(--font-xlg);
+    }
+    .card {
+        border-radius: .5rem;
+        transition: .2s;
+        height: 320px;
+        width: 400px;
+         font-family: "Geist", sans-serif;
+        padding: 1rem;
+        background-color: var(--glassNavigation);
+        border: 1px solid var(--stroke);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);  
+        h2 {
+            font-size: var(--font-lg);
+            color: var(--snow-light);
+            font-weight: bolder;
+        }
+        p {
+            font-size: var(--font-md);
+            margin-bottom: .9rem;
+        }
+        img {
+            padding: .2rem;
+            border-radius: .5rem;
+            object-fit: cover;
+            height: 140px;
+            width: 100%;
+        }
+        a {
+            padding: .5rem 2rem;
+            border-radius: .5rem;
+            background-color: var(--mono-purple);
+            color: var(--snow-light);
+            transition: .2s;
+        }
+        a:hover {
+            background-color: var(--snow-light);
+            color: var(--shadow-grayer);
+        }
+    }
+    .card:hover {
+        border: 1px solid var(--hilight-purple);
+        transform: translatey(-2rem);
+    }
+}
+#categories:hover {
+    .separator-stroke {
+        width: 80%;
+        height: 5px;
+        margin-top: 1rem;
+        background-color: var(--mono-purple);
+    }
+}
+@media (max-width:1000px) {
+    .text-mobile {
+        text-align: center;
+    }
+    .alight-mobile {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+}
