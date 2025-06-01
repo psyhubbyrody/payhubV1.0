@@ -30,8 +30,9 @@
                 <li class="logo"><a href="" class="flex"><img src="src/assets/icons/main/pytransluced.png" alt="">HUB</a></li>
                 <div class="separator"></div>
                 <div class="menu flex gap-5">
-                    <li class="nav-btn"><a href="src/pages/cheats.html">Cheats</a></li> 
-                    <li class="nav-btn"><a href="src/pages/configs.html">Configs</a></li> 
+                    <li id="modal-show-btn-nav" class="nav-btn">
+                        <button type="button">Downloads</button>
+                    </li>
                 </div>
 
                 <div class="separator"></div>
@@ -39,6 +40,21 @@
             </ol>
         </nav>
     </header>
+    <div class="modal-container w-full flex items-center justify-center  ">
+        <div id="modal-items" class=" hidden z-500 transition-all scale-95 duration-300">
+            <ol>
+                <li class="nav-btn">
+                <a href="src/pages/cheats.html" class="flex items-center justify-center">Cheats</a>
+                </li>
+                <li class="nav-btn">
+                <a href="src/pages/configs.html" class="flex items-center justify-center">Scripts</a>
+                </li>
+                <li class="nav-btn">
+                <a href="#" class="flex items-center justify-center">Suporte</a>
+                </li>
+            </ol>
+        </div>
+    </div>
     <main class="flex flex-col w-full items-center justify-center bg-03">
         <section id="introduction" class="pt-48 mb-22 alight-mobile">
             <div class="z-20 relative mt-22 text-mobile">
@@ -132,5 +148,6 @@
             <p class=""> Front-end e identidade visual desenvolvidos por <span><a href="">@eorody</a></span></p>
         </section>
     </footer>
+    <script src="src/scripts/navbarmodal.js"></script>
 </body>
 </html>
