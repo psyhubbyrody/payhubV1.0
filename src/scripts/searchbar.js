@@ -15,17 +15,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedGame = gameSelect.value;
         const selectedType = typeSelect.value;
         
-        // Iterar sobre cada card e determinar se deve ser exibido ou ocultado
+        //determinar se deve o card ser exibido ou ocultado
         cheatCards.forEach(card => {
             // Obter os dados do card
             const cardGame = card.getAttribute('data-game');
             const cardType = card.getAttribute('data-type');
             
-            // Obter o texto do título e descrição para pesquisa
+            //texto do título e descrição para pesquisa
             const cardTitle = card.querySelector('h1').textContent.toLowerCase();
             const cardDescription = card.querySelector('p').textContent.toLowerCase();
             
-            // Verificar se o card atende a todos os critérios de filtro
+            //verifica se o card atende a todos os critérios
             const matchesSearch = searchText === '' || 
                                  cardTitle.includes(searchText) || 
                                  cardDescription.includes(searchText);
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const matchesGame = selectedGame === 'all' || selectedGame === '' || cardGame === selectedGame;
             const matchesType = selectedType === 'all' || selectedType === '' || cardType === selectedType;
             
-            // Exibir ou ocultar o card com base nos resultados do filtro
+            //Exibe ou ocultar o card com base nos resultados do filtro
             if (matchesSearch && matchesGame && matchesType) {
                 card.style.display = 'flex';
             } else {
@@ -50,4 +50,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Executar a filtragem inicial para garantir que o estado inicial esteja correto
     filterCards();
 });
-// Esperar que o DOM esteja completamente carregado antes de executar o código

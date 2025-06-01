@@ -2,6 +2,7 @@
  margin-top: 1rem;
     width: 50%;
     font-family: "Geist", sans-serif;
+    animation: show .8s ease;
     ol {
         padding: .4rem .6rem;
         background-color: var(--glassNavigation);

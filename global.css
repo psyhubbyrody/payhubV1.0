@@ -42,12 +42,25 @@
     --font-md: 1rem;
     --font-sm: .8rem;
 }
-
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0404;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mono-purple);
+  border-radius: 1rem;
+}
 .bg-01 {
     background-image: url(src/assets/backgrounds/main-bg.png);
 }
 .bg-02 {
     background-image: url(src/assets/backgrounds/secondary.png);
+}
+.bg-03 {
+    background-image: url(src/assets/backgrounds/giphy.gif);
+    background-size: cover;
 }
 footer {
     background-color: var(--darkness-snow);
