@@ -27,7 +27,7 @@
 @keyframes show {
     0%, 55% {
     opacity: 1;
-    transform:translateY( -5rem) scale(1.03);
+    transform:translateY( -3rem) scale(1.03);
     }
     55%, 80% {
     opacity: 1;
