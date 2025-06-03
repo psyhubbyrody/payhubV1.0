@@ -1,4 +1,7 @@
 @media (max-width:1400px) {
+    .navbar-style-default {
+        width: 90%;
+    }
     #introduction {
         h1 {
             font-size: var(--font-xxlg);
@@ -130,6 +133,7 @@
 }
 }
 @media (max-width:780px) {
+    
     #introduction {
     h1 {
         text-shadow: 0 0 10px #6e3ac428, 0 0 10px #64607715, 0 0 10px #4942ac28, 0 0 10px #4b469618, 0 0 10px;
@@ -220,6 +224,12 @@
 }
 
 @media (max-width:480px) {
+    .navbar-style-default {
+        width: 90%;
+    ol {
+        padding: .6rem .8rem;
+    }
+    }
 #introduction {
     h1 {
         text-shadow: 0 0 10px #6e3ac428, 0 0 10px #64607715, 0 0 10px #4942ac28, 0 0 10px #4b469618, 0 0 10px;
