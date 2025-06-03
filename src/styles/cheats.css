@@ -46,7 +46,7 @@
         a {
             border: 1px solid var(--stroke);
             padding: .6rem 1rem;
-            border-radius: .5rem;
+            border-radius: 2rem;
             background-color: var(--glass-navigation);
             color: var(--snow-light);
             transition: .2s;

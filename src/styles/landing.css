@@ -11,7 +11,7 @@
 
     }
     p {
-        text-shadow: 0 0 10px #decaff49, 0 0 10px #d9d1ff2c, 0 0 10px #4942ac28, 0 0 10px #4b469618, 0 0 10px;
+        text-shadow: 0 0 10px #240c4b49, 0 0 10px #d9d1ff2c, 0 0 10px #4942ac28, 0 0 10px #4b469618, 0 0 10px;
         color: var(--shadow-grayer);
         font-size: var(--font-lg);
         animation: summon 4s ease ;
@@ -97,13 +97,13 @@
         }
         a {
             padding: .5rem 2rem;
-            border-radius: .5rem;
+            border-radius: 2rem;
             background-color: var(--mono-purple);
             color: var(--snow-light);
             transition: .2s;
         }
         a:hover {
-            box-shadow: 0 10px 30px rgba(121, 18, 255, 0.1);
+            box-shadow: 0 10px 30px     rgba(121, 18, 255, 0.1);
             background-color: var(--snow-light);
             color: var(--shadow-grayer);
         }
