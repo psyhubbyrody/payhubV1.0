@@ -1,0 +1,85 @@
+.cheat-card {
+        background-color: var( --glass-menu);
+        border: 1px solid var(--transluced-purple);
+        box-shadow: 0 4px 30px rgba(45, 15, 85, 0.329);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: .5rem;
+        border-radius: .5rem;
+        width: 420px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        transition: .2s;
+        div {
+            margin-left: .2rem;
+            padding: .4rem;
+        }
+        div + div {
+            border-top: 1px solid var(--stroke);
+        }
+        .banner {
+            background-color: var( --darkness-abysal);
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: .5rem;
+            img {
+                transition: .4s;
+                border-radius: .5rem;
+                width: 60%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        h1 {
+            color: var(--snow-light);
+            font-weight: 900;
+                    font-family: 'Bionix', sans-serif;
+            font-size: var(--font-xl);
+        }
+        p {
+            color: var(--shadow-grayer);
+        }
+        a {
+            border: 1px solid var(--stroke);
+            padding: .6rem 1rem;
+            border-radius: .5rem;
+            background-color: var(--glass-navigation);
+            color: var(--snow-light);
+            transition: .2s;
+            img {
+                width: 1.5rem;
+                transition: .2s;
+            }
+        }
+        a:hover {
+            background-color: var(--snow-light);
+            color: var(--stroke);
+            img {
+                filter: invert(100);
+            }
+        }
+        .tags {
+            padding: .2rem .5rem;
+            border-radius: 1rem;
+            font-size: var(--font-sm);
+            color: var(--aesthetic-white);
+            background-color: var(--transluced-purple);
+            border: 1px solid var(--stroke-purple);
+            font-weight: bolder;
+        }
+}
+.cheat-card:hover {
+        border: 1px solid var(--hilight-purple);
+    transform: scale(1.05);
+        .banner {
+            overflow: hidden;
+           img {
+             transform: scale(1.1);
+           }
+
+        }
+}
