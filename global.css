@@ -5,8 +5,9 @@
 @import url(src/styles/mobile.css);
 :root {
     /*Barra de navegação (navgation bar colors and sizes)*/
-    --glassNavigation: #11111338;
+    --glassNavigation: #0a0a0e65;
     --selectedButton: #f3f3ff;
+    --glass-menu: #0a090c79;
     --stroke: #2328304b;
     --textDefault: #d5d4db;
     --textSelected: #f5f3ff;
@@ -20,6 +21,8 @@
     --darkness-abysal: #000000;
     --mono-purple : #5800bd;
     --hilight-purple: #6f24b4;
+    --transluced-purple: #6e24b425;
+    --stroke-purple:#6e24b470;
          /*texto responsivo ao tema na barra de navv */
 
         --darkness-text: #080808;
@@ -61,6 +64,13 @@
 .bg-03 {
     background-image: url(src/assets/backgrounds/giphy.gif);
     background-size: cover;
+}
+.bg-04 {
+    background-image: url(src/assets/backgrounds/hvh2.gif);
+    background-size: cover;
+}
+body {
+    background-color: black;
 }
 footer {
     background-color: var(--darkness-snow);
