@@ -92,6 +92,9 @@
         .searchbar {
             width: 40%;
         }
+        h1 {
+            font-size: var(--font-lg);
+        }
     .nav-btn {
         padding: .3rem  .5rem;
     }
